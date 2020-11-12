@@ -1,0 +1,405 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/* universal   background-color: black;*/
+body {
+  padding-top: 150px;
+  font-family: serif;
+  background-color: black;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.pagetitle p {
+  font-size: 45px;
+  color: #333333;
+  margin-bottom: -20px;
+  letter-spacing: 20px;
+}
+
+
+/* header */
+.container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.navbar-right {
+  margin-right: 350px;
+}
+
+.navbar-inverse {
+  background-color: black;
+  border-color: #090909;
+  opacity: 0.9;
+}
+
+.logo {
+  text-align: center;
+  font-size:3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menulist {
+  letter-spacing: 15px;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+
+/* footer */
+footer {
+  padding-top: 12px;
+  margin-bottom: 20px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer h1 {
+  color: #9d9d9d;
+  font-size: 1.5em;
+}
+
+footer h2 {
+  color: white;
+  font-size: 3em;
+  padding-top: 12px;
+  margin-bottom: 30px;
+}
+
+footer small {
+  text-align: center;
+}
+
+
+/* TOP */
+.Tphoto1 {
+  position:relative;
+  text-align: center;
+  top:-10px;
+}
+
+.Tmoji1 {
+  position:absolute;
+  top: 30%;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  padding: 1em 0;
+  text-align:center;
+}
+
+.Tmoji1 h2　{
+  font-family: cursive;
+  letter-spacing: 20px;
+  font-size:70px;
+  text-align:center;
+}
+
+.Tmoji1 h1 {
+  font-size:20px;
+}
+
+.Tmoji2 {
+  padding: 2em;
+  margin: 5em 0;
+  color: #9d9d9d;
+  font-size:25px;
+  background: #313131;/*背景色*/
+  border-left: double 15px #a9a9a9;/*左線*/
+  border-right: double 15px #a9a9a9;/*右線*/
+}
+
+.Tmoji3 {
+  height: 320px;
+  padding: 20px 0 30px 0;
+  margin: 3em 0;
+  color: #333333;
+  font-size: 45px;
+  background: #a9a9a9;/*背景色*/
+  border-left: double 15px #313131;/*左線*/
+  border-right: double 15px #313131;/*右線*/
+}
+
+.Tmoji3 h1 {
+  margin-bottom: 30px;
+  color: #333333;
+  font-size: 45px;
+}
+
+.Tmoji3 a{
+  color: #333333;
+  font-size: 23px;
+  text-align: left;
+  display: flex;
+padding-left: 180px;
+}
+
+.Tmoji3 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Tmoji3 hr{
+margin: 10px 150px;
+text-align: center;
+}
+
+
+/*MENU*/
+.box1,.box2 {
+  padding: 12em;
+  margin: 5em 10px;
+  color: #9d9d9d;
+  background   : rgba(153, 153, 153, 0.3);
+}
+
+.menutitle {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+  margin: 100px 0 -50px 0;
+}
+
+main a {
+  display: inline-block;
+}
+
+.column {
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px;
+  width: 160px;
+  margin: 10px 20px 0 0;
+  color: #fff;
+  background-color: #9d9d9d;
+}
+
+.column:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+
+/*ACCESS*/
+.ggmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px;
+  height: 0;
+  overflow: hidden;
+}
+
+.ggmap iframe {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 500px;
+  height: 610px;
+  margin: 30px 50px 20px 30px;
+}
+
+.accessbox {
+  float: left;
+  padding: 20px 50px;
+  color: #9d9d9d;
+  background : rgba(153, 153, 153, 0.3);
+  margin: 40px 40px 20px 10px;
+}
+
+.accessbox h1 {
+  font-size: 28px;
+  color: #fff;
+  margin: 40px 25px;
+  font-weight: bold;
+}
+
+.accessbox h2 {
+  font-size: 24px;
+  color: #bbbbbb;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.accessbox h3 {
+  font-size: 20px;
+  color: #bbbbbb;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.accessbox h4 {
+  font-size: 18px;
+  color: #bbbbbb;
+  margin-bottom: 40px;
+}
+
+
+/*ACCESS*/
+.recruitmessage h1 {
+  font-size: 22px;
+  color: #9d9d9d;
+  margin: 40px 0 20px 0 ;
+}
+
+.recruitmessage h2 {
+  font-size: 27px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.recruit-table {
+  display: flex;
+}
+
+.recruitmessage h3 {
+  font-size: 20px;
+  color: #fff;
+  width: 20%;
+  min-width: 20px;
+  margin: -12px 0 -12px 140px;
+}
+
+.recruitmessage h4 {
+  font-size: 17px;
+  color: #fff;
+  width: 100%;
+  min-width: 20px;
+  margin-top: -14px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.recruitmessage h5 {
+  font-size: 22px;
+  color: #9d9d9d;
+  margin: 40px 10px 20px 0;
+}
+.recruitmessage hr {
+  margin-top: 0;
+  width: 75%;
+}
+
+
+/*INFO*/
+.infobox1 {
+  text-align:center;
+  padding: 40px 20px;
+  margin: 30px 40px;
+  color: #9d9d9d;
+  background   : rgba(153, 153, 153, 0.3);
+}
+
+.infobox1 h1 {
+  font-size: 45px;
+  color: #9d9d9d;
+  margin: 10px;
+}
+
+.infobox2 {
+  text-align:center;
+  padding: 40px;
+  margin: 3em 80px;
+  background : #fff;
+  overflow: scroll;
+  width: 850px;
+	height: 500px;
+}
+
+.infobox3 {
+  width: 700px;
+	height: 300px;
+  padding: 10px;
+  margin: 50px 40px 50px 40px;
+  font-size:25px;
+  background: #d2d2d2;
+  border-left: double 15px #a9a9a9;/*左線*/
+  text-align: left;
+}
+
+.infobox3 h1 {
+  font-size: 20px;
+  color: #212121;
+  margin: 10px 20px;
+}
+
+.infobox3 a {
+  font-size:24px;
+  color: #582f2f;
+  margin: 20px 30px;
+  text-decoration: none;
+}
+
+.infobox3 h3 {
+  font-size: 18px;
+  color: #212121;
+  margin: 10px 20px;
+  float: left;
+}
+
+
+/*message*/
+.messagebox h1 {
+  font-size: 35px;
+  color: #fff;
+  margin: 60px 20px;
+}
+
+.messagebox h2 {
+  font-size: 20px;
+  color: #ccc;
+  margin: 20px 20px;
+}
+
+.personbox {
+  width: 1000px;
+  height: 500px;
+  padding: 30px;
+  margin: 70px 60px;
+  border: solid 2px #fff;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+.personbox h1 {
+  font-size: 27px;
+  color: #fff;
+  margin: 20px 0 40px -120px;
+  float: left;
+  font-weight: bold;
+}
+
+.personbox h2 {
+  font-size: 20px;
+  color: #ccc;
+  margin: 20px 40px 0 40px;
+  float: left;
+}
+
+.img-person{
+  margin: 100px 20px;
+}

@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   rspec:
-    working_directory: ~/potepanec
+    working_directory: ~/playpage_app
     docker:
       - image: circleci/ruby
     steps:
@@ -16,17 +16,17 @@ jobs:
           command: |
             set -x
             docker-compose up -d
-            docker exec potepanec_app curl -4 --retry 10 --retry-delay 3 --retry-connrefused http://localhost:3000
+            docker exec playpage_app curl -4 --retry 10 --retry-delay 3 --retry-connrefused http://localhost:3000
       - run:
           name: Setup database
           command: |
-            docker-compose exec potepanec bash -c 'yes n | bundle exec rails g spree:install --migrate --seed --sample --auto_accept'
+            docker-compose exec playpage_app bash -c 'yes n | bundle exec rails g spree:install --migrate --seed --sample --auto_accept'
       - run:
           name: Run rspec
-          command: docker-compose exec potepanec rspec
+          command: docker-compose exec playpage_app rspec
 
   rubocop:
-    working_directory: ~/potepanec
+    working_directory: ~/playpage_app
     docker:
       - image: circleci/ruby:2.5.1
     steps:
@@ -49,7 +49,7 @@ jobs:
             - vendor/bundle
 
   heroku_deploy:
-    working_directory: ~/potepanec
+    working_directory: ~/playpage_app
     docker:
       - image: sue445/heroku-cli
     steps:

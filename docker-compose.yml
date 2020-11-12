@@ -26,7 +26,7 @@ services:
       - '36379:6379'
     volumes:
       - redis-data:/var/lib/redis
-  potepanec:
+  playpage_app:
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -43,14 +43,14 @@ services:
     networks:
       - default
     volumes:
-      - .:/potepanec
+      - .:/playpage_app
       # https://qiita.com/shotat/items/57d049793605ffc20135
-      - /potepanec/log
-      - /potepanec/tmp
-      - /potepanec/vendor/bundle
-      - vendor_assets_2_7:/potepanec/vendor/assets
-      - node_modules:/potepanec/node_modules
-      - public_spree_2_7:/potepanec/public/spree
+      - /playpage_app/log
+      - /playpage_app/tmp
+      - /playpage_app/vendor/bundle
+      - vendor_assets_2_7:/playpage_app/vendor/assets
+      - node_modules:/playpage_app/node_modules
+      - public_spree_2_7:/playpage_app/public/spree
     tty: true
     stdin_open: true
     command: bundle exec rails server -b 0.0.0.0
