@@ -42,10 +42,7 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
 
   # Highlight code that triggered database queries in logs.
-  # FIXME:
-  # default option modifed in order to temporarily supress irrelevant logs issues https://github.com/rails/rails/issues/32935
-  #
-  config.active_record.verbose_query_logs = false
+  config.active_record.verbose_query_logs = true
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
@@ -61,7 +58,4 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-
-  # add white list ips under Docker
-  config.web_console.whitelisted_ips = '0.0.0.0/0'
 end
