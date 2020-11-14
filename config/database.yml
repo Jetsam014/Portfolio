@@ -53,5 +53,5 @@ production:
   <<: *default
   database: polaypage_2_7_production
   username: palypage
-  password: <%= ENV['POTEPANEC_DATABASE_PASSWORD'] %>
+  password: <%= ENV['PLAYPAGE_DATABASE_PASSWORD'] %>
   url: <%= ENV['JAWSDB_URL']&.sub('mysql://', 'mysql2://') %>
