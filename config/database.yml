@@ -51,7 +51,7 @@ test:
 #
 production:
   <<: *default
-  database: polaypage_2_7_production
-  username: palypage
-  password: <%= ENV['PLAYPAGE_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   url: <%= ENV['JAWSDB_URL']&.sub('mysql://', 'mysql2://') %>
